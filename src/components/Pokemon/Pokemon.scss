@@ -1,0 +1,41 @@
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 1rem;
+}
+
+.singlePokemon {
+    &:hover {
+        cursor: pointer;
+        background-color: #e5e5e5 !important;
+    }
+    .img {
+        height: 128px;
+        aspect-ratio: 1;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    .bi-x-lg {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        color: black;
+        cursor: pointer;
+        &:hover {
+            color: #ff0000;
+        }
+    }
+}
+
